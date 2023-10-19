@@ -114,7 +114,7 @@ if(isset($_POST["next"]))
 //session_start();
 //$amt=1000;
 $amt= $_SESSION['amount'];
-  $name=$_SESSION['username']  ;
+  $name=$_SESSION['username'];
 ?>
           <div class="radio-input">
             <input id="card" type="radio" name="payment">
