@@ -113,7 +113,7 @@ if(isset($_POST["next"]))
 <?php 
 //session_start();
 //$amt=1000;
-$amt= $_SESSION['totalprice'];
+$amt= $_SESSION['amount'];
   $name=$_SESSION['username'];
 ?>
           <div class="radio-input">
