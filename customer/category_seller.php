@@ -3,9 +3,9 @@
  <?php //include('header.php');?>
 
  <?php
-if(isset($_SESSION['email']))
+if(isset($_SESSION['username']))
 {
-    $name=$_SESSION['email'];
+    $name=$_SESSION['username'];
     include("afterlogin.php");
 }
 else 
@@ -28,7 +28,7 @@ else
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
-                        <h1> Gallery</h1>
+                        <h1> Vegetables</h1>
                         <p>Exceptional Taste, Exceptional Price</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ else
             <div class="row special-list">
             <?php
 			
-            $q="select * from veg where status=1 UNION select * from fruits where status=1";
+            $q="select * from veg  where status=1";
 
 $info=$dao->query($q);
 //print_r($info);
@@ -71,7 +71,7 @@ $info=$dao->query($q);
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
-                                <a class="cart" href="display_seller.php?id=<?= $info[$i]["veg_id"]?>">Add to Cart</a>
+                                <a class="cart" href="singleitemveg.php?id=<?= $info[$i]["veg_id"]?>">Add to Cart</a>
                             </div>
                         </div>
                     </div>

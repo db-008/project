@@ -34,7 +34,7 @@ if(isset($_POST['signin']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up </title>
+    <title>LOGIN  </title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="registration/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -75,7 +75,7 @@ if(isset($_POST['signin']))
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                                <a href="index.php">Back to Home</a>
+                                <a href="home.php">Back to Home</a>
                             </div>
                         </form>
                         <div class="social-login">

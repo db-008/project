@@ -38,12 +38,12 @@ if(isset($_POST['signup']))
 		'password'=>$_POST['password'],
   
 		);
-		$table='reg';
+		$table='registeration';
 		if($dao->insert($data,$table))
         {
         	//$msg="Registered successfully";
 		echo "<script> alert('New record created successfully');</script> ";
-		
+		//header('location:user_index.php')
 		}
 		
 		else
@@ -76,7 +76,7 @@ if(isset($_POST['signup']))
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title">Registeration</h2>
                         <form method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                <!-- <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -118,8 +118,8 @@ if(isset($_POST['signup']))
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="registration/images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="login.php" class="signup-image-link">I am already member</a><a href="index.php" class="signup-image-link">Back to Home</a>
+                        <figure><img src="registration/images/logo1.jpg" alt="sing up image"></figure>
+                        <a href="login.php" class="signup-image-link">I am already member</a><a href="home.php" class="signup-image-link">Back to Home</a>
                     </div>
                 </div>
             </div>

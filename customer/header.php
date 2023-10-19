@@ -17,7 +17,7 @@
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="logo1" href="images/logo1.jpg">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,7 +39,7 @@
     
 <body>
     <!-- Start Main Top -->
-    <div class="main-top">
+    <!-- <div class="main-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
@@ -118,14 +118,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="category_seller.php">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="home.php">Home</a></li>
                        
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="vegview.php">Vegetables</a></li>
-                        <li class="nav-item"><a class="nav-link" href="viewfruits.php">Fruits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="category_seller2.php">Fruits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="category_seller.php">Vegetables</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="registration.php">register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registration.php">Register</a></li>
                         
                     </ul>
                 </div>
@@ -167,7 +167,7 @@
                             <p>1x - <span class="price">750</span></p>
                         </li>
                         <li class="total">
-                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <a href="viewbooking.php" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
                             <span class="float-right"><strong>Total</strong>: 1250</span>
                         </li>
                     </ul>

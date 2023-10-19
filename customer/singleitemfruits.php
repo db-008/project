@@ -13,10 +13,10 @@
         {
             alert(str);
 	           var price=document.getElementById("price").value;  
-	           var qty=document.getElementById("qty").value; 
-	           var total=price*qty; 
+	           var quantity=document.getElementById("quantity").value; 
+	           var totalprice=price*quantity; 
 	           //alert(total);
-	               document.getElementById("total").value = total;
+	               document.getElementById("totalprice").value = totalprice;
         }   
     </script>
   
@@ -45,20 +45,20 @@ $dao=new DataAccess();
 <?php
 if(isset($_POST["btn_insert"]))
 {
-if(!isset($_SESSION['email']))
+if(!isset($_SESSION['username']))
    {
 	   header('location:login.php');
   }
   else
   { 
-    $uemail=$_SESSION['email'];
+    $uemail=$_SESSION['username'];
     $iid = $_GET['id'];
-    $q="select * from item where iid=".$iid ;
+    $q="select * from fruits where fid=".$iid ;
     $info1=$dao->query($q);
-    $iname=$info1[0]["iname"];
-    $price=$info1[0]["offerprice"];
-    $quantity=$_POST["qty"];
-    $totalprice=$_POST["total"];
+    $iname=$info1[0]["f_name"];
+    $price=$info1[0][""];
+    $quantity=$_POST["quantity"];
+    $totalprice=$_POST["totalprice"];
     $_SESSION['amount']=$totalprice;
 
     $bookingdate=date('Y-m-d',time());
@@ -70,8 +70,8 @@ if(!isset($_SESSION['email']))
     VALUES ('$uemail','$iid','$iname','$price','$quantity','$totalprice','$bookingdate','$orderdate','$status')";
                                    
     $conn->query($sql);
-    echo $sql;
- echo"<script >location.href = 'Payment.php'</script>";
+   // echo $sql;
+ echo"<script >location.href = 'viewcart.php'</script>";
 
 }
 
@@ -85,7 +85,7 @@ $dao=new DataAccess();
 ?>
 
 <?php	$iid=$_GET['id']; 
-	 $q="select * from item where iid=".$iid ;
+	 $q="select * from fruits where fid=".$iid ;
     $info=$dao->query($q);
   
 ?>
@@ -97,32 +97,32 @@ $dao=new DataAccess();
  <div class="upper">
         <div class="upper-left">
 <?php 
-if(isset($_SESSION['email']))
+if(isset($_SESSION['username']))
 { 
-   $name=$_SESSION['email'];
+   $iname=$_SESSION['username'];
 ?>
 
- <h7 class="title-w3-agileits title-black-wthree"><?php  echo $name ?></h7>
+ <h7 class="title-w3-agileits title-black-wthree"><?php  echo $iname ?></h7>
 
 <?php } ?>
             <h3>Product Details</h3>
-            <img style="width:300; height:300" src=<?php echo BASE_URL."uploads/".$info[0]["iimage"]; ?> alt=" " class="img-responsive" />
+            <img style="width:300; height:300" src=<?php echo BASE_URL."img/".$info[0]["fimage"]; ?> alt=" " class="img-responsive" />
         
         </div>
         <div class="content">
             <h3>Details</h3>
             <div style="display: block;">
                 <label for="name">itemname:</label><br>
-                <input id="iname" name="iname" type="text" value="<?php echo $info[0]["iname"];?>"  readonly style="margin-top: 8px;"><br>
+                <input id="iname" name="iname" type="text" value="<?php echo $info[0]["fname"];?>"  readonly style="margin-top: 8px;"><br>
 
                 <label for="Total">price</label><br>
-                <input id="price" name="price" type="text" value="<?php echo $info[0]["offerprice"];?>"  readonly style="margin-top: 8px;"><br>
+                <input id="price" name="price" type="text" value="<?php echo $info[0]["fprice"];?>"  readonly style="margin-top: 8px;"><br>
                 
                 <label for="quantity">quantity</label><br>
-                <input id="qty" name="qty" type="text" onkeyup="showtotal()"  style="margin-top: 8px;"><br>
+                <input id="quantity" name="quantity" type="text" onkeyup="showtotal()"  style="margin-top: 8px;"><br>
 
                 <label for="totalprice">totalprice</label><br>
-                <input id="total" name="total" type="text"  style="margin-top: 8px;"><br>
+                <input id="totalprice" name="totalprice" type="text"  style="margin-top: 8px;"><br>
                 
                 <label for="">orderdate</label><br>
                 <input id="orderdate" name="orderdate" type="date"   style="margin-top: 8px;"><br>
