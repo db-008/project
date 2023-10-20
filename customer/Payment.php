@@ -99,8 +99,7 @@ if(isset($_POST["next"]))
 		//session_start();
 		 $name=$_SESSION['username'] ;
 		 echo $name;
-		 ?>
-
+		 ?> 
 
       <div class="payment-method">
         <label for="card" class="method card">
