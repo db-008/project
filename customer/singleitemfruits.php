@@ -27,7 +27,7 @@
 <?php
 
 require('../config/autoload.php'); 
-//include("header.php");	
+include("header1.php");	
 include("dbcon.php");
 
 ?>
