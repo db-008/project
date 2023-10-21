@@ -1,5 +1,6 @@
 <?php require('../config/autoload.php'); ?>
 <?php
+unset($_SESSION['username']);
 $dao=new DataAccess();
 $rules=array(
 	'username'=>array('required'=>true),
