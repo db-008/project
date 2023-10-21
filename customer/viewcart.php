@@ -66,19 +66,28 @@ $name=$_SESSION['username'];
            $info=$dao->query($q);
            $i=0;
            $totall=0;
+           if($info)
+           {
            while($i<count($info))
            {
             $totall = $totall + $info[$i]["totalprice"];
             $i++;
            
            }
+           $_SESSION["totall"]=$totall;
            ?>
            Total Price :
            <input type="text"  value=" <?php echo $totall; ?>" readonly name="total" />
-           
+           <?php
+           }
+           else
+           {
+            echo "no items";
+           }
+         
 
 
-
+?>
             
         <form action="" method="POST" enctype="multipart/form-data">
 
