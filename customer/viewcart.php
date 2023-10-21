@@ -62,7 +62,7 @@ $name=$_SESSION['username'];
              
                 </table>
                 <?php
-           $q="select * from booking where status=2";
+           $q="select * from booking where status=3";
            $info=$dao->query($q);
            $i=0;
            $totall=0;
@@ -75,7 +75,7 @@ $name=$_SESSION['username'];
            ?>
            Total Price :
            <input type="text"  value=" <?php echo $totall; ?>" readonly name="total" />
-           </div>    
+           
 
 
 
