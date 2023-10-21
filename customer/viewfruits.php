@@ -3,14 +3,14 @@
  <?php //include('header.php');?>
 
  <?php
-if(isset($_SESSION['email']))
+if(isset($_SESSION['username']))
 {
-    $name=$_SESSION['email'];
-    include("afterlogin.php");
+    $name=$_SESSION['username'];
+    include("header1.php");
 }
 else 
 { 
-    include("header.php");
+    include("header1.php");
 }
 ?>
 

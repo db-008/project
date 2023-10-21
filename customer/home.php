@@ -82,7 +82,7 @@ $info=$dao->query($q);
 				} ?>
                 <?php
 			
-            $q="select * from fruits";
+            $q="select * from fruits where status =1";
 
 $info=$dao->query($q);
 //print_r($info);
