@@ -6,7 +6,7 @@
     <meta name="viewport">
     <meta http-equiv="X-UA-Compatible">
     <title>Document</title>
-    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="uie.css">
     
     <script>
 function showtotal() {
