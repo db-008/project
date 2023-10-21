@@ -47,7 +47,7 @@ else
             <div class="row special-list">
             <?php
 			
-            $q="select * from veg";
+            $q="select * from veg where status=1";
 
 $info=$dao->query($q);
 //print_r($info);

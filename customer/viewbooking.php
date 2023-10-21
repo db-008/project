@@ -61,7 +61,21 @@ $name=$_SESSION['username'];
 ?>
              
                 </table>
-            </div>    
+                <?php
+           $q="select * from booking where status=3";
+           $info=$dao->query($q);
+           $i=0;
+           $totall=0;
+           while($i<count($info))
+           {
+            $totall = $totall + $info[$i]["totalprice"];
+            $i++;
+           
+           }
+           ?>
+           Total Price :
+           <input type="text"  value=" <?php echo $totall; ?>" readonly name="total" />
+           </div>       
 
             
         <form action="" method="POST" enctype="multipart/form-data">
