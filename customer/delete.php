@@ -7,7 +7,7 @@ $sql = "update booking set status=2 where  bid=".$bid;
 
 $conn->query($sql);
 
- header('location:viewbooking.php');
+ header('location:viewcart.php');
 
 
 

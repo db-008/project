@@ -62,7 +62,7 @@ $name=$_SESSION['username'];
              
                 </table>
                 <?php
-           $q="select * from booking where status=3";
+           $q="select * from booking where status=1";
            $info=$dao->query($q);
            $i=0;
            $totall=0;
