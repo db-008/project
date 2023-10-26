@@ -6,7 +6,7 @@
 if(isset($_SESSION['username']))
 {
     $name=$_SESSION['username'];
-    include("afterlogin.php");
+    include("header1.php");
 }
 else 
 { 
