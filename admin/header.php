@@ -208,7 +208,7 @@
             </li>
 
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
                 <span class="menu-title">Add </span>
                 <i class="menu-arrow"></i>
@@ -234,31 +234,37 @@
                   <li class="nav-item"> <a class="nav-link" href="viewfruits"> View Fruits </a></li>
                 </ul>
               </div>
-            </li>
+            </li> -->
 
 
             <li class="nav-item">
               <a class="nav-link" href="vegetable.php">
-                <span class="menu-title">Add Vegetables Extra</span>
+                <span class="menu-title">Add Vegetables</span>
                 <i class="mdi mdi-contacts menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="fruits">
-                <span class="menu-title">Add Fruits Extra</span>
+                <span class="menu-title">Add Fruits</span>
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="viewvegetable.php">
-                <span class="menu-title">View Vegetables Extra</span>
+                <span class="menu-title">View Vegetables</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="viewfruits">
-                <span class="menu-title">View Fruits Extra</span>
+                <span class="menu-title">View Fruits</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.php">
+                <span class="menu-title">View Bookings</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
               </a>
             </li>
 

@@ -27,7 +27,7 @@
 <?php
 
 require('../config/autoload.php'); 
-include("header1.php");	
+// include("header1.php");	
 include("dbcon.php");
 
 ?>
@@ -106,7 +106,7 @@ if(isset($_SESSION['username']))
 
 <?php } ?>
             <h3>Product Details</h3>
-            <img style="width:300; height:300" src=<?php echo BASE_URL."img/".$info[0]["veg_image"]; ?> alt=" " class="img-responsive" />
+            <img class="img" style="width:300; height:300" src=<?php echo BASE_URL."img/".$info[0]["veg_image"]; ?> alt=" " class="img-responsive" />
         
         </div>
         <div class="content">

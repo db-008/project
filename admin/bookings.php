@@ -7,7 +7,7 @@ $dao=new DataAccess();
 $name=$_SESSION['username'];
 
 ?>
-<?php include('afterlogin.php'); ?>
+<?php include('header.php'); ?>
 
     
     <div class="container_gray_bg" id="home_feat_1">
@@ -16,18 +16,19 @@ $name=$_SESSION['username'];
             <div class="col-md-12">
                 <table  border="1" class="table" style="margin-top:100px;">
                     <tr>
-                        <h1><center> CANCELED ITEMS</center></h1>
+                        <h1><center>Booking</center></h1>
                         
                         <th>srno</th>
-                        <th>uemail</th>
+                        <th>username</th>
                         <th>iid</th>
-                        <th>iname</th>
+                        <th>Itemname</th>
                         <th>price</th>
                        
                         <th>quantity</th>
                         <th>totalprice</th>
                         <th>bookingdate</th>
                         <th>orderdate</th>
+                        <th>Action</th>
                       
                         
 
@@ -35,8 +36,8 @@ $name=$_SESSION['username'];
 <?php
     
     $actions=array(
-       
-        'delete'=>array('label'=>'Cancel','link'=>'cancel.php','params'=>array('id'=>'bid'),'attributes'=>array('class'=>'btn btn-success'))
+        
+        'delete'=>array('label'=>'Deliver','link'=>'cancel.php','params'=>array('id'=>'bid'),'attributes'=>array('class'=>'btn btn-success'))
     );
 
     $config=array(
@@ -45,7 +46,7 @@ $name=$_SESSION['username'];
 
     );
 
-    $condition=" uemail='".$name."' and status=4";
+    $condition="status=4";
     $join=array(
        
     ); 
@@ -61,15 +62,11 @@ $name=$_SESSION['username'];
 ?>
              
                 </table>
+                
             </div>    
 
             
-        <form action="" method="POST" enctype="multipart/form-data">
-
-<button class="btn btn-success" type="submit"  name="home" ><a href="Payment.php">Payment</button>
-<button class="btn btn-success" type="submit" style="margin-right: 2px;"  name="book" ><a href="home.php">Cancel</button>
-
-</form>    
+            
             
             
         </div><!-- End row -->
@@ -77,3 +74,6 @@ $name=$_SESSION['username'];
     </div><!-- End container_gray_bg -->
     
     
+    <?php
+  include('footer.html');
+  ?>

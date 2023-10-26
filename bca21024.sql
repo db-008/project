@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 19, 2023 at 09:43 AM
+-- Generation Time: Oct 26, 2023 at 09:40 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `status` int NOT NULL DEFAULT '1',
   `bid` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`bid`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `booking`
@@ -53,12 +53,35 @@ INSERT INTO `booking` (`uemail`, `iid`, `iname`, `price`, `quantity`, `totalpric
 ('dhanush08', 2, '', 0, 89, 7869, '2023-10-11', '2023-10-13', 2, 4),
 ('dhanush08', 10, 'Potato', 60, 1, 60, '2023-10-11', '2023-10-12', 2, 5),
 ('dhanush08', 9, 'carrot', 55, 1, 55, '2023-10-11', '2023-10-12', 2, 6),
-('dhanush08', 9, 'carrot', 55, 1, 55, '2023-10-11', '2023-10-12', 3, 7),
+('dhanush08', 9, 'carrot', 55, 1, 55, '2023-10-11', '2023-10-12', 2, 7),
 ('dhanush08', 10, 'Potato', 60, 1, 60, '2023-10-16', '2023-10-17', 2, 8),
-('dhanush08', 8, 'cabbage', 45, 1, 45, '2023-10-16', '2023-10-18', 3, 9),
-('dhanush08', 10, 'Potato', 60, 1, 60, '2023-10-16', '0000-00-00', 3, 10),
+('dhanush08', 8, 'cabbage', 45, 1, 45, '2023-10-16', '2023-10-18', 2, 9),
+('dhanush08', 10, 'Potato', 60, 1, 60, '2023-10-16', '0000-00-00', 2, 10),
 ('dhanush08', 9, 'carrot', 55, 0, 0, '2023-10-16', '0000-00-00', 2, 11),
-('dhanush08', 9, 'carrot', 55, 0, 0, '2023-10-16', '0000-00-00', 2, 12);
+('dhanush08', 9, 'carrot', 55, 0, 0, '2023-10-16', '0000-00-00', 2, 12),
+('dhanush08', 12, 'Tomato', 70, 1, 54, '2023-10-19', '2023-10-20', 2, 13),
+('dhanush08', 12, '', 0, 5, 60, '2023-10-20', '2023-10-20', 2, 14),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 2, 15),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 2, 16),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 2, 17),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 2, 18),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 2, 19),
+('dhanush08', 12, 'Tomato', 70, 89, 60, '2023-10-20', '2023-10-20', 5, 20),
+('dhanush08', 8, 'cabbage', 45, 1, 45, '2023-10-20', '2023-10-20', 5, 21),
+('dhanush08', 12, 'Tomato', 70, 1, 70, '2023-10-20', '2023-10-20', 5, 22),
+('dhanush08', 12, 'Tomato', 70, 1, 70, '2023-10-21', '2023-10-21', 5, 23),
+('dhanush08', 12, 'Tomato', 70, 1, 60, '2023-10-21', '2023-10-21', 2, 24),
+('dhanush08', 12, 'Tomato', 70, 1, 60, '2023-10-21', '2023-10-21', 4, 25),
+('dhanush08', 11, 'Beetroot', 55, 1, 54, '2023-10-21', '2023-10-21', 4, 26),
+('dhanush08', 8, '', 0, 89, 54, '2023-10-21', '2023-10-21', 5, 27),
+('dhanush08', 10, '', 0, 1, 220, '2023-10-21', '2023-10-21', 5, 28),
+('dhanush08', 12, 'Tomato', 70, 1, 202, '2023-10-21', '2023-10-21', 4, 29),
+('dhanush08', 11, 'Beetroot', 55, 1, 222, '2023-10-21', '2023-10-21', 2, 30),
+('dhanush08', 9, '', 0, 1, 222, '2023-10-21', '2023-10-21', 2, 31),
+('dhanush08', 22, 'spinach', 55, 1, 22, '2023-10-21', '2023-10-21', 2, 32),
+('dhanush08', 16, 'Lady Finger', 40, 0, 0, '2023-10-21', '0000-00-00', 2, 33),
+('dhanush08', 17, 'Cumcumber', 50, 1, 50, '2023-10-26', '2023-10-26', 3, 34),
+('dhanush08', 19, 'Broccoli', 160, 10, 1600, '2023-10-26', '2023-10-26', 3, 35);
 
 -- --------------------------------------------------------
 
@@ -74,18 +97,26 @@ CREATE TABLE IF NOT EXISTS `fruits` (
   `fimage` varchar(50) NOT NULL,
   `status` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`fid`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `fruits`
 --
 
 INSERT INTO `fruits` (`fid`, `fname`, `fprice`, `fimage`, `status`) VALUES
-(12, 'Rambutan', 80, '890b91f0b4bc13c97287342e37284237_f1a583e162a5.jpg', 1),
-(11, 'strawberry', 40, 'a39ff153b0f616f456c1cc9ea81c1de2_11ccbea5f0624641.', 1),
-(8, 'orange', 120, 'db931b68abe2484529b1acb9de147385_fb174d9bbf7c6.jpg', 1),
-(9, 'apple', 140, '54916981ab975ce842970f9fea0170e5_d8ec75ea566dd.jpg', 1),
-(10, 'pinapple', 220, '3636d24016367170893b42b6672e4a87_a6996688ec.jpg', 1);
+(16, 'grapes', 120, '853a40cd10328803f9fe0cc5daca54a3_9d230e92bd862132.', 1),
+(15, 'Orange', 120, 'b50d6f18fbbd950de33994f1966f3357_94f7aedcc7d25.jpg', 1),
+(14, 'Bannana', 60, 'cb4eeedc7cdb57693e48d444eec59fd5_52371abeb4.jpg', 1),
+(13, 'Mango', 170, 'f15e5332540d406c0ee8929cde629c75_80c6165fc884.jpg', 1),
+(12, 'Rambutan', 80, '890b91f0b4bc13c97287342e37284237_f1a583e162a5.jpg', 2),
+(11, 'strawberry', 40, 'a39ff153b0f616f456c1cc9ea81c1de2_11ccbea5f0624641.', 2),
+(8, 'orange', 120, 'db931b68abe2484529b1acb9de147385_fb174d9bbf7c6.jpg', 2),
+(9, 'apple', 140, '54916981ab975ce842970f9fea0170e5_d8ec75ea566dd.jpg', 2),
+(10, 'pinapple', 220, '3636d24016367170893b42b6672e4a87_a6996688ec.jpg', 2),
+(17, 'Pinapple', 120, 'a4297ae178d207093d5630f656096262_118bab1853a.jpeg', 1),
+(18, 'Apple', 160, 'aa76894606ea4f088f06d3d098146826_dd1b348b280.jpg', 1),
+(19, 'strawberry', 160, '4223102cf332faf00b00597bf4c4c2fd_2ab824eb57.jpg', 1),
+(20, 'Watermelon', 120, '597e043abe89db94bb853c985af2d7ad_adfb15d2e89f3144b', 1);
 
 -- --------------------------------------------------------
 
@@ -127,18 +158,30 @@ CREATE TABLE IF NOT EXISTS `veg` (
   `veg_image` varchar(90) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `status` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`veg_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `veg`
 --
 
 INSERT INTO `veg` (`veg_id`, `veg_name`, `veg_price`, `veg_image`, `status`) VALUES
-(8, 'cabbage', 45, '63b75e094e693478f8749c4cfa8b6845_5f4bc22ebcbefe1cd1.jpg', 1),
-(12, 'Tomato', 70, 'bfc30f76d93c9644dac13b2901445cd3_b48d18f2ca.jpg', 1),
-(11, 'Beetroot', 55, 'a6643cccd31e27a9601f4d1cd0bdb91e_77790e4cb22ff.jpg', 1),
-(9, 'carrot', 55, 'b2a067902d0b229d98b648d2784748ae_a4be2e6499ac.jpg', 1),
-(10, 'Potato', 60, '4553d629b03acdda4001a11fc27aebbb_71085b52a7107ad6d3.jpg', 1);
+(16, 'Lady Finger', 40, 'faaf25bf0139346bad8222e2b2493f0b_c565b54407a.jpg', 1),
+(15, 'Potato', 60, '3eec8f44cad19375cbf66c15f9ed1724_dc096e67a8a2f4c128.png', 2),
+(14, 'Beetroot', 50, '49d31e61eebda6cc144735b72889bc3b_f35c9985499eb0.jpg', 2),
+(8, 'cabbage', 45, '63b75e094e693478f8749c4cfa8b6845_5f4bc22ebcbefe1cd1.jpg', 2),
+(13, 'cabbage', 45, '24aad56d0876d792f648a3874464b313_60d38e8099f93e6.png', 2),
+(12, 'Tomato', 70, '63341dae3e1dd7f0667aebe87aacc4cc_db0235f45f6bdb.jpg', 2),
+(11, 'Beetroot', 55, 'd080f7302da0109b26dc96cb69f280c0_9679f5e3a5a48bddc1.jpg', 2),
+(9, 'carrot', 55, 'e2affa82511c51a8b4725ea3466ec271_21283804fd.png', 2),
+(10, 'Potato', 60, '4553d629b03acdda4001a11fc27aebbb_71085b52a7107ad6d3.jpg', 2),
+(17, 'Cumcumber', 50, 'e3656ed12f3d4102bc26ee1725769cc6_9cacda73f68f26d.jpg', 1),
+(18, 'Beetroot', 45, '2e3a8239736aee94071ca52fcb1a40cb_71baa2a1dc90194d7590.jpg', 1),
+(19, 'Broccoli', 160, '14a5be9c95ce9b27eacedb3594b691d5_f286c8e2c568.jpg', 1),
+(20, 'cauliflower', 140, 'b0e01a26f545e25d6716daf64d7572a0_c33f5aac877.jpg', 1),
+(21, 'eggplant', 90, '27b923ef89d721f0bdd3989bdc7f0351_e92b62231ea344fe2.jpg', 1),
+(22, 'spinach', 55, '8232f0a0d5d7de37de20a2e827f5be13_f273bc8f2a.png', 1),
+(23, 'green kale', 65, '9e04f3f3bd4802900f87c4e772b6ee49_85886a7f57539f.jpg', 1),
+(24, 'Cabbage', 70, '5508990ac591db9d2d6f112de8c8d926_73b07eba62.png', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

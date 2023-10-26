@@ -124,7 +124,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="category_seller2.php">Fruits</a></li>
                         <li class="nav-item"><a class="nav-link" href="category_seller.php">Vegetables</a></li>
-                         <li class="nav-item"><a class="nav-link" href="viewbooking.php">Bookings</a></li>
+                         <li class="nav-item"><a class="nav-link" href="viewbooking.php">Bookings / Orders</a></li>
                          <li class="nav-item"><a class="nav-link" href="login.php">Logout</a></li>
 
                         <!-- <li class="nav-item"><a class="nav-link" href="registration.php">Register</a></li> -->

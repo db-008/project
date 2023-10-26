@@ -134,7 +134,7 @@
                         <li class="nav-item"><a class="nav-link" href="viewcart.php">View Cart</a></li>
                        
                      <li class="nav-item"><a class="nav-link" href="viewbooking.php">Pending Bookings</a></li>
-                     <li class="nav-item"><a class="nav-link" href="viewcancel.php">Cancellation</a></li>
+                     <li class="nav-item"><a class="nav-link" href="vieworder.php">My Orders</a></li>
 
                      <li class="nav-item"><a class="nav-link" href="login.php">Logout</a></li>
 
