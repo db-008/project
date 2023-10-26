@@ -19,8 +19,8 @@ $name=$_SESSION['username'];
                         <h1><center>Booking</center></h1>
                         
                         <th>srno</th>
-                        <th>username</th>
-                        <th>iid</th>
+                        <th>Customers</th>
+                        <!-- <th>iid</th> -->
                         <th>Itemname</th>
                         <th>price</th>
                        
@@ -50,7 +50,7 @@ $name=$_SESSION['username'];
     $join=array(
        
     ); 
-     $fields=array('bid','uemail','iid','iname','price','quantity','totalprice','bookingdate','orderdate');
+     $fields=array('bid','uemail','iname','price','quantity','totalprice','bookingdate','orderdate');
 
     $users=$dao->selectAsTable($fields,'booking as b',$condition,NULL,$actions,$config);
     
