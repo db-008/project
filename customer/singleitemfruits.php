@@ -55,7 +55,7 @@ if(!isset($_SESSION['username']))
     $iid = $_GET['id'];
     $q="select * from fruits where fid=".$iid ;
     $info1=$dao->query($q);
-    $iname=$info1[0]["f_name"];
+    $iname=$info1[0]["fname"];
     $price=$info1[0][""];
     $quantity=$_POST["quantity"];
     $totalprice=$_POST["totalprice"];
