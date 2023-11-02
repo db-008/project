@@ -16,6 +16,7 @@ include("dbcon.php");
 require('../config/autoload.php');
 $dao=new DataAccess();
 ?>
+<link rel="stylesheet" href="styles.css">
 <div class="row">
  <div class="col-md-12">
  <div class="table-responsive">
