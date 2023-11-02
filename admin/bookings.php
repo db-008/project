@@ -4,7 +4,7 @@
 <?php
 $dao=new DataAccess();
 
-$name=$_SESSION['username'];
+// $name=$_SESSION['username'];
 
 ?>
 <?php include('header.php'); ?>

@@ -11,7 +11,7 @@
     <script>
     function showtotal() 
         {
-            alert(str);
+            // alert(str);
 	           var price=document.getElementById("price").value;  
 	           var quantity=document.getElementById("quantity").value; 
 	           var totalprice=price*quantity; 
