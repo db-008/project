@@ -62,7 +62,7 @@ $info=$dao->query($q);
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale"><?php echo $info[$i]["veg_name"]?></p>
+                                <p class="sale"><?php echo $info[$i]["veg_name"]."    <br> Rs.  ";  echo $info[$i]['veg_price']." ";?></p>
                             </div>
                             <img src=<?php echo BASE_URL."img/".$info[$i]["veg_image"]; ?> class="img-fluid" alt="Image">
                             <div class="mask-icon">

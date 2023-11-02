@@ -62,14 +62,17 @@ $info=$dao->query($q);
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale"><?php echo $info[$i]["veg_name"]?></p>
+                                <p class="sale"><?php echo $info[$i]["veg_name"]."    <br> Rs.  ";  echo $info[$i]['veg_price']." ";?></p>
                             </div>
                             <img src=<?php echo BASE_URL."img/".$info[$i]["veg_image"]; ?> class="img-fluid" alt="Image">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <?php
+                                    echo $price=$info[0]['veg_price'];
+                                    ?>
+                                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li> -->
+                                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li> -->
+                                    <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li> -->
                                 </ul>
                                 <a class="cart" href="singleitemveg.php?id=<?= $info[$i]["veg_id"]?>">Add to Cart</a>
                             </div>
@@ -97,7 +100,7 @@ $info=$dao->query($q);
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale"><?php echo $info[$i]["fname"]?></p>
+                                <p class="sale"><?php echo $info[$i]["fname"]."    <br> Rs.  ";  echo $info[$i]['fprice']." ";?></p>
                             </div>
                             <img src=<?php echo BASE_URL."img/".$info[$i]["fimage"]; ?> class="img-fluid" alt="Image">
                             <div class="mask-icon">
