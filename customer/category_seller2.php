@@ -71,8 +71,14 @@ $info=$dao->query($q);
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
-                                <a class="cart" href="singleitemfruits.php?id=<?= $info[$i]["fid"]?>">Add to Cart</a>
-                            </div>
+                                <?php
+                                if(isset($_SESSION['username'])){
+                                 echo '<a class="cart" href="singleitemfruits.php?id=' . $info[$i]["fid"] . '">Add to Cart</a>';
+                                } else {
+                                    echo '<p style="color: white; margin-top: 100px;"> Please login to Add items to cart . </p>';
+                                
+                                }
+                            ?>                            </div>
                         </div>
                     </div>
                 </div>
