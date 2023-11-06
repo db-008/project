@@ -1,0 +1,46 @@
+/* style.css */
+
+/* General table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #444;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Header row */
+  thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Alternating row colors for better readability */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect */
+  tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Borders around cells */
+  td {
+    border: 1px solid #444;
+  }
+  
+  /* Buttons */
+  input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
