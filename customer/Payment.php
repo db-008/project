@@ -125,7 +125,7 @@ $amt= $_SESSION['totall'];
           <img src="payment/img/paypal_logo.png"/>
           <div class="radio-input">
             <input id="paypal" type="radio" name="payment">
-             Pay Rs.<?php echo $amt;?> with pay pal
+             Pay Rs.<?php echo $amt;?> with UPI
           </div>
         </label>
       </div>
