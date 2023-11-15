@@ -118,7 +118,7 @@ if(isset($_POST['signup']))
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="registration/images/logo1.jpg" alt="sing up image"></figure>
+                        <figure><img src="registration/images/logo2.png" alt="sing up image"></figure>
                         <a href="login.php" class="signup-image-link">I am already member</a><a href="home.php" class="signup-image-link">Back to Home</a>
                     </div>
                 </div>

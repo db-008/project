@@ -5,63 +5,60 @@
 session_start();
 ?>
 	<script type="text/javascript">
-function validations()
-{
- var  name = document.getElementById("Cname");
-if(name.value=="")
-{
- alert("Enter Card Holder Name...");
-name.focus();
-return false;
-}
-	
-	
-	 var  name = document.getElementById("date");
-if(name.value=="")
-{
- alert("Enter Card Mounth");
-name.focus();
-return false;
-}
-	
-	 var  name = document.getElementById("Cyy");
-if(name.value=="")
-{
- alert("Enter Card Year");
-name.focus();
-return false;
-}
+function validations() {
+    var name = document.getElementById("Cname");
+    if (name.value == "") {
+        alert("Enter Card Holder Name...");
+        name.focus();
+        return false;
+    }
 
-		 var  name = document.getElementById("verification");
-if(name.value=="")
-{
- alert("Enter Card CVV / CVC");
-name.focus();
-return false;
-}
-	
-var  name = document.getElementById("cardnumber");
-if(name.value=="")
-{
- alert("Enter Card Number");
-name.focus();
-return false;
-}
-	
-var  name = document.getElementById("add");
-if(name.value=="")
-{
- alert("Enter Delivery Address");
-name.focus();
-return false;
-}
+    var mm = document.getElementById("date");
+    if (mm.value == "" || mm.value.length !== 2 || isNaN(mm.value)) {
+        alert("Enter a valid Card Month (MM)");
+        mm.focus();
+        return false;
+    }
 
+    var yy = document.getElementById('Cyy');
+    if (yy.value == '' || yy.value.length !== 2 || isNaN(yy.value)) {
+        alert('Enter a valid Card Year (YY)');
+        yy.focus();
+        return false;
+    } else {
+        var currentYear = new Date().getFullYear(); // Get the current year
+        var enteredYear = parseInt('20' + yy.value); // Assuming years are 20XX format
 
+        if (enteredYear < currentYear) {
+            alert('Please enter a year that is not in the past.');
+            yy.focus();
+            return false;
+        }
+    }
 
+    var cvv = document.getElementById("verification");
+    if (cvv.value == "" || cvv.value.length !== 3 || isNaN(cvv.value)) {
+        alert("Enter a valid Card CVV / CVC");
+        cvv.focus();
+        return false;
+    }
+
+    var cardNumber = document.getElementById("cardnumber");
+    if (cardNumber.value == "" || cardNumber.value.length !== 16 || isNaN(cardNumber.value)) {
+        alert("Enter a valid 16-digit Card Number");
+        cardNumber.focus();
+        return false;
+    }
+
+    var address = document.getElementById("add");
+    if (address.value == "") {
+        alert("Enter Delivery Address");
+        address.focus();
+        return false;
+    }
 }
-	
-	
-	</script>
+</script>
+
 	
   <meta charset="UTF-8">
   <title>Document</title>
@@ -99,7 +96,8 @@ if(isset($_POST["next"]))
 		//session_start();
 		 $name=$_SESSION['username'] ;
 		 echo $name;
-		 ?> 
+		 ?>
+
 
       <div class="payment-method">
         <label for="card" class="method card">
@@ -113,7 +111,7 @@ if(isset($_POST["next"]))
 //session_start();
 //$amt=1000;
 $amt= $_SESSION['totall'];
-  $name=$_SESSION['username'];
+  $name=$_SESSION['username']  ;
 ?>
           <div class="radio-input">
             <input id="card" type="radio" name="payment">
@@ -125,7 +123,7 @@ $amt= $_SESSION['totall'];
           <img src="payment/img/paypal_logo.png"/>
           <div class="radio-input">
             <input id="paypal" type="radio" name="payment">
-             Pay Rs.<?php echo $amt;?> with UPI
+             Pay Rs.<?php echo $amt;?> with pay pal
           </div>
         </label>
       </div>

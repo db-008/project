@@ -1,18 +1,54 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  table, th, td {
-    border: 1px solid black;
-  }
-  
-  th, td {
-    padding: 15px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
+<?php
+// ... (your PHP code)
+
+// Here starts your HTML content
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<?php
+// ... (rest of your PHP and HTML code)
+?>
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table border="1" id="printTable">
+                <!-- Your table content goes here -->
+                <!-- ... -->
+            </table>
+            <!-- Rest of your content -->
+        </div>
+    </div>
+</div>
+
+<!-- Your JavaScript for printing -->
+<script>
+    function printData() {
+        var divToPrint = document.getElementById("printTable");
+        newWin = window.open("");
+        newWin.document.write(divToPrint.outerHTML);
+        newWin.print();
+        newWin.close();
+    }
+</script>
+</body>
+</html>

@@ -17,6 +17,7 @@ require('../config/autoload.php');
 $dao=new DataAccess();
 ?>
 <link rel="stylesheet" href="styles.css">
+
 <div class="row">
  <div class="col-md-12">
  <div class="table-responsive">
@@ -30,11 +31,10 @@ $dao=new DataAccess();
                               <th style="text-align:left" >Date:<?php echo  date("Y/m/d"); ?></th>
                             </tr>
                            <tr>
-                        <th>Customer name</th>
-                        <th>Item Name</th>
+                        <th>Customer</th>
+                        <th>Item name</th>
                         
 			<th>Quantity</th>
-         <th>Price</th>
 <th>Total price</th>
 </tr>
                       
@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 		
 		
-      echo "<tr> <td> "  . $row["uemail"]. "</td> <td>"  . $row["iname"]. "</td> <td>" . $row["quantity"]. "</td>  <td>". $row["quantity"]. "</td>  <td>" . $row["totalprice"]. "</td>   
+      echo "<tr> <td> "  . $row["uemail"]. "</td> <td>"  . $row["iname"]. "</td> <td>" . $row["quantity"]. "</td>  <td>" . $row["totalprice"]. "</td>   
       <td>" ."</td>  </tr>";
 	  
 	    

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>cake - Ecommerce Bootstrap 4 HTML Template</title>
+    <title>Freshshop - Ecommerce Bootstrap 4 HTML Template</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -36,20 +36,12 @@
 </head>
 
 <body>
-    
-<body>
     <!-- Start Main Top -->
-    <!-- <div class="main-top">
+    <div class="main-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-							<option>¥ JPY</option>
-							<option>$ USD</option>
-							<option>€ EUR</option>
-						</select>
-                    </div>
+
                     <div class="right-phone-box">
                         <p>Call US :- <a href="#"> +11 900 800 100</a></p>
                     </div>
@@ -62,32 +54,27 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
-					</div>
+
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off on first  Purchase Promo code: offT80
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on cakes
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop cakes
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
                                 </li>
                                 <li>
                                     <i class="fab fa-opencart"></i> Off 50%! Shop Now
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop cakes
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on cakes
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
                                 </li>
                                 <li>
                                     <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
@@ -101,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
@@ -122,72 +109,34 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="home.php">Home</a></li>
-                       
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                            <ul class="dropdown-menu">
+								<li><a href="pendings.php">Booking Pendings</a></li>
+                                <li><a href="cart.php">Cart</a></li>
+                                <li><a href="wishlist.php">Wishlist</a></li>
                             </ul>
                         </li>
-                        
-                       
-                        
-                        <!-- <li class="nav-item"><a class="nav-link" href="category_seller.php">Vegetables</a></li>
-                        <li class="nav-item"><a class="nav-link" href="category_seller2.php">Fruits</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reportcancel.php">Cancel report</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="viewcart.php">View Cart</a></li>
-                       
-                     <li class="nav-item"><a class="nav-link" href="viewbooking.php">Pending Bookings</a></li>
-                     <li class="nav-item"><a class="nav-link" href="vieworder.php">My Orders</a></li>
-
-                     <li class="nav-item"><a class="nav-link" href="login.php">Logout</a></li>
-
+                        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.php">Logout</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
                 <!-- Start Atribute Navigation -->
-                <!-- <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-							<a href="#">
-								<i class="fa fa-shopping-bag"></i>
-								<span class="badge">3</span> -->
-								<!-- <p>My Cart</p>
-							</a>
-						</li>
-                    </ul>
-                </div> -->
+               
                 <!-- End Atribute Navigation -->
             </div>
             <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <li class="cart-box">
-                    <ul class="cart-list">
-                        <li>
-                            <a href="#" class="photo"><img src="images/meltonchoco.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">meltonchoco </a></h6>
-                            <p>1x - <span class="price">900</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/forestfruit.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">funfettypound</a></h6>
-                            <p>1x - <span class="price">750</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/funfettypound.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">forestfruit</a></h6>
-                            <p>1x - <span class="price">800</span></p>
-                        </li>
-                        <li class="total">
-                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                            <span class="float-right"><strong>Total</strong>: 2450</span>
-                        </li>
-                    </ul>
-                </li>
-            </div>
+
             <!-- End Side Menu -->
         </nav>
         <!-- End Navigation -->
-        <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+    </header>
+        <!-- End Navigation -->
+        <!-- <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a> -->
 
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -209,6 +158,9 @@
     
     
     
+    
+
+  
     
 
   

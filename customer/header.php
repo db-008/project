@@ -17,7 +17,7 @@
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="logo1" href="images/logo1.jpg">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,20 +36,12 @@
 </head>
 
 <body>
-    
-<body>
     <!-- Start Main Top -->
-    <!-- <div class="main-top">
+    <div class="main-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-							<option>¥ JPY</option>
-							<option>$ USD</option>
-							<option>€ EUR</option>
-						</select>
-                    </div>
+
                     <div class="right-phone-box">
                         <p>Call US :- <a href="#"> +11 900 800 100</a></p>
                     </div>
@@ -61,46 +53,45 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
-					</div>
+              
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off on first Purchase Promo code: offT80
-                                </li>
-                                
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! shop cakes
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! buy Now
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop cakes
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
                                 </li>
-                               
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off on birthday Purchase Promo code: offT30
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
                                 </li>
-                               
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
     <header class="main-header">
-                   
         <!-- Start Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
             <div class="container">
@@ -108,73 +99,33 @@
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
-                </button> 
-                                          
-                    <!- <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a> 
-                </div> 
-                          
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="home.php">Home</a></li>
-                       
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="category_seller2.php">Fruits</a></li>
-                        <li class="nav-item"><a class="nav-link" href="category_seller.php">Vegetables</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="registration.php">Register</a></li>
-                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
                 <!-- Start Atribute Navigation -->
-                <!-- <div class="attr-nav"> -->
-                    <!-- <ul> -->
-                        <!-- <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu"> -->
-							<a href="login.php">
-								<!-- <i class="fa fa-shopping-bag"></i> -->
-								<!-- <span class="badge">3</span> -->
-								<p>My Cart</p>
-							</a>
-						</li>
-                    </ul>
-                </div>
+        
                 <!-- End Atribute Navigation -->
             </div>
             <!-- Start Side Menu -->
-             <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <li class="cart-box">
-                    <ul class="cart-list">
-                        <li>
-                            <a href="#" class="photo"><img src="images/meltonchoco.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">meltonchoco </a></h6>
-                            <p>1x - <span class="price">900</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/forestfruit.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">forestfruit</a></h6>
-                            <p>1x - <span class="price">800</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/funfettypound.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">funfettypound</a></h6>
-                            <p>1x - <span class="price">750</span></p>
-                        </li>
-                        <li class="total">
-                            <a href="viewbooking.php" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                            <span class="float-right"><strong>Total</strong>: 1250</span>
-                        </li>
-                    </ul>
-                </li>
-            </div> 
+
             <!-- End Side Menu -->
         </nav>
+        <!-- End Navigation -->
+    </header>
         <!-- End Navigation -->
         <!-- <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a> -->
 

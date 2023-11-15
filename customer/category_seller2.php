@@ -6,7 +6,7 @@
 if(isset($_SESSION['username']))
 {
     $name=$_SESSION['username'];
-    include("header1.php");
+    include("afterlogin.php");
 }
 else 
 { 
@@ -19,17 +19,27 @@ else
 
 
  <?php $dao=new DataAccess();?>
+ <!-- Start All Title Box -->
+ <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Services</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
  <div class="products-box">
         <div class="container">
-
-
-
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
-                        <h1> Fruits</h1>
-                        <p>Exceptional Taste, Exceptional Price</p>
+                        <h1>Fruits</h1>
                     </div>
                 </div>
             </div>
@@ -37,17 +47,17 @@ else
                 <div class="col-lg-12">
                     <div class="special-menu text-center">
                         <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">All</button>
-                           
+                        <button class="active" data-filter="*" onclick="window.location.href='gallery.php'">All</button>
+                            <button id="vegetablesButton" data-filter=".bulbs" onclick="location.href='category_seller.php'">Vegetables</button>
+                            <button id="fruitsButton" data-filter=".bulbs" onclick="location.href='category_seller2.php'">Fruits</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="row special-list">
             <?php
 			
-            $q="select * from fruits  where status=1";
+            $q="select * from fruits where status=1";
 
 $info=$dao->query($q);
 //print_r($info);
@@ -62,7 +72,7 @@ $info=$dao->query($q);
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale"><?php echo $info[$i]["fname"]."    <br> Rs.  ";  echo $info[$i]['fprice']." ";?></p>
+                                <p class="sale"><?php echo $info[$i]["fname"]?></p>
                             </div>
                             <img src=<?php echo BASE_URL."img/".$info[$i]["fimage"]; ?> class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -72,13 +82,25 @@ $info=$dao->query($q);
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <?php
-                                if(isset($_SESSION['username'])){
+
+
+                                 // Check if the user is logged in
+                                 if(isset($_SESSION['username'])) {
+                                 // If the user is logged in, display the "Add to Cart" button
                                  echo '<a class="cart" href="singleitemfruits.php?id=' . $info[$i]["fid"] . '">Add to Cart</a>';
-                                } else {
-                                    echo '<p style="color: white; margin-top: 100px;"> Please login to Add items to cart . </p>';
-                                
-                                }
-                            ?>                            </div>
+                                 } else {
+                                 // If the user is not logged in, display a message or redirect to the login page
+                                 echo '<p style="color: white; margin-top: 100px;">Please login to add items to the cart.</p>';
+
+                                 // Alternatively, you can redirect to the login page
+                                 //header("Location: login.php");
+                                 }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                        <h4 class="sale"><?php echo strtoupper($info[$i]["fname"])?></h4>
+                            <h5 class="sale"><?php echo '₹' . $info[$i]["fprice"] ?></h5>
                         </div>
                     </div>
                 </div>

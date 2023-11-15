@@ -6,7 +6,10 @@
 body{
     width: 100%;
 }
-
+.img{
+    width: 450px;
+    height:300px;
+}
 .upper{
     display: inline-block;
     height: 50%;
